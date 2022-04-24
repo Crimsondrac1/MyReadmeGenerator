@@ -1,0 +1,22 @@
+{
+  "name": "myreadmegenerator",
+  "version": "1.0.0",
+  "description": "Generate Formatted Readme files",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Crimsondrac1/MyReadmeGenerator.git"
+  },
+  "author": "Doug Erickson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Crimsondrac1/MyReadmeGenerator/issues"
+  },
+  "homepage": "https://github.com/Crimsondrac1/MyReadmeGenerator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.2"
+  }
+}
