@@ -1,149 +1,142 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {}
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
-
-// TODO: Create a function to generate markdown for README
-// function generateMarkdown(data) {
-//   return `# ${data.title}
-
-// `;
-// }'Apache 2.0', 'BSD', 'GNU-GPL', 'MIT', 'Mozilla'
-
-function getBadge(data) {
-  const licenseType = data.license[0];
-  let licenseString = " "
-  if (licenseType === "Apache 2.0") {
-    licenseString = `![License: MIT](https://crimsondrac1.github.io/Portfolio/assets/images/apache.jpg)`
-  };
-  if (licenseType === "BSD") {
-    licenseString = `![License: GPL v2](https://crimsondrac1.github.io/Portfolio/assets/images/bsd.jpg)`
-  };
-  if (licenseType === "GNU-GPL") {
-     licenseString = `![License](https://crimsondrac1.github.io/Portfolio/assets/images/gnu-gpl.png)`
-    };
-  if (licenseType === "MIT") {
-      licenseString = `![License: GPL v3](https://crimsondrac1.github.io/Portfolio/assets/images/mit.png)`
-    };
-  if (licenseType === "Mozilla") {
-      licenseString = `![License: GPL v3](https://crimsondrac1.github.io/Portfolio/assets/images/mozilla.png)`
-    };
-  return licenseString
-  };
-
-
 // create the about section
-const getUser = pUser => {
+const getUser = (pUser) => {
   if (!pUser) {
-    return '';
+    return "";
   }
 
   return `${pUser}`;
 };
 
-
-const getpName = pName => {
+const getpName = (pName) => {
   if (!pName) {
-    return '';
+    return "";
   }
 
   return `${pName}`;
 };
 
-const getDesc = pDesc => {
+const getDesc = (pDesc) => {
   if (!pDesc) {
-    return '';
+    return "";
   }
 
   return `${pDesc}`;
 };
 
-const getInst = pInst => {
+const getInst = (pInst) => {
   if (!pInst) {
-    return 'N/A';
+    return "N/A";
   }
 
   return `${pInst}`;
 };
 
-const getUse = pUse => {
+const getUse = (pUse) => {
   if (!pUse) {
-    return 'N/A';
+    return "N/A";
   }
 
   return `${pUse}`;
 };
 
-const getLic = pLic => {
+const getLic = (pLic) => {
   if (!pLic) {
-    return 'No License Specified';
+    return "No License Specified";
   }
 
   return `${pLic}`;
 };
 
-const getCont = pCont => {
+const getCont = (pCont) => {
   if (!pCont) {
-    return 'N/A';
+    return "N/A";
   }
 
   return `${pCont}`;
 };
 
-const getTest = pTest => {
+const getTest = (pTest) => {
   if (!pTest) {
-    return 'N/A';
+    return "N/A";
   }
 
   return `${pTest}`;
 };
 
-const getQues = pQues => {
+const getQues = (pQues) => {
   if (!pQues) {
-    return 'N/A';
+    return "N/A";
   }
 
   return `${pQues}`;
 };
 
-const getMediaName = pMediaName => {
+const getMediaName = (pMediaName) => {
   if (!pMediaName) {
-    return 'N/A';
+    return "N/A";
   }
 
   return `${pMediaName}`;
 };
 
-const getMedia = pMedia => {
+const getMedia = (pMedia) => {
   if (!pMedia) {
-    return 'N/A';
+    return "N/A";
   }
 
   return `${pMedia}`;
 };
 
-
-
-module.exports = templateData => {
+module.exports = (templateData) => {
   // destructure page data by section
-  const { user, project, description, install, useage, license, contrib, test, question, medianame, media } = templateData;
-  // console.log(title)
-  // ${getLicPic()}
+  const {
+    user,
+    project,
+    description,
+    install,
+    useage,
+    license,
+    contrib,
+    test,
+    question,
+    medianame,
+    media,
+  } = templateData;
+  console.log(license);
+  // function getBadge(data) {
+  // const licenseType = license;
+  // let licenseString = " "
+  // const getLicBadge = (licBadge) => {
+  //   if (!licBadge) {
+  //     return "N/A";
+  //   }
+  
+  //   return `${licBadge}`;
+  // };
+  if (license === "Apache 2.0") {
+    licenseString = `[![License: Apache 2.0](https://crimsondrac1.github.io/Portfolio/assets/images/apache.jpg)](https://www.apache.org/licenses/LICENSE-2.0)`;
+  }
+  if (license === "BSD") {
+    licenseString = `[![License: BSD](https://crimsondrac1.github.io/Portfolio/assets/images/bsd.jpg)](https://en.wikipedia.org/wiki/BSD_licenses)`;
+  }
+  if (license === "GNU-GPL") {
+    licenseString = `[![License: GNU-GPL](https://crimsondrac1.github.io/Portfolio/assets/images/gnu-gpl.png)](https://www.gnu.org/licenses/gpl-3.0.en.html)`;
+  }
+  if (license === "MIT") {
+    licenseString = `[![License: MIT](https://crimsondrac1.github.io/Portfolio/assets/images/mit.png)](https://en.wikipedia.org/wiki/MIT_License)`;
+  }
+  if (license === "Mozilla") {
+    licenseString = `[![License: Mozilla](https://crimsondrac1.github.io/Portfolio/assets/images/mozilla.jpg)](https://www.mozilla.org/en-US/MPL/)`;
+  }
 
   return `
-  # ${getpName(project)} ### A project by: ${getUser(user)}
-  **${getDesc(description)}**
-  Licensed with ${getBadge(data)}
-  
-  ---
+  # ${getpName(project)} \n
+  ### A project by: ${getUser(user)} \n
+  ${getDesc(description)} \n
+  Licensed with:\n
+  ${(licenseString)}
 
+  ---
   ## Table of Contents
   ### [Installation](#installation)
   ### [Usage](#usage)
@@ -152,9 +145,7 @@ module.exports = templateData => {
   ### [Tests](#tests)
   ### [Questions](#questions)
   ### [Screenshots/Media](#media)
-
   ---
-
   ## Installation
   #### ${getInst(install)}
 
@@ -165,7 +156,7 @@ module.exports = templateData => {
 
   ## License
   #### This project is using the ${getLic(license)} license.
-  ${getBadge(data)}
+  ${(licenseString)}
 
 
   ## Contributions
@@ -180,13 +171,7 @@ module.exports = templateData => {
   #### ${getQues(question)}
 
 
-  ## Screenshots/Media
+  ## Media
   #### ![${getMediaName(medianame)}](${getMedia(media)})
   `;
 };
-
-
-
-
-
-// module.exports = generateMarkdown;

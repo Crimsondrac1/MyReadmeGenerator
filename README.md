@@ -1,10 +1,15 @@
 
-  # erthnthn
-  ### A project by: sdfasfd
-  **cvszrva**
-  
-  ---
+  # This Project 
 
+  ### A project by: Doug 
+
+  Short Description 
+
+  Licensed with:
+
+  [![License: Mozilla](https://crimsondrac1.github.io/Portfolio/assets/images/mozilla.jpg)](https://www.mozilla.org/en-US/MPL/)
+
+  ---
   ## Table of Contents
   ### [Installation](#installation)
   ### [Usage](#usage)
@@ -13,33 +18,32 @@
   ### [Tests](#tests)
   ### [Questions](#questions)
   ### [Screenshots/Media](#media)
-
   ---
-
-  # Installation
-  #### sdfbdsbs
+  ## Installation
+  #### Please install
 
 
   ## Usage
-  #### sdfbsdebetr
+  #### Please Use
 
 
   ## License
-  #### Apache 2.0
+  #### This project is using the Mozilla license.
+  [![License: Mozilla](https://crimsondrac1.github.io/Portfolio/assets/images/mozilla.jpg)](https://www.mozilla.org/en-US/MPL/)
 
 
   ## Contributions
-  #### sdfbsr
+  #### Please contribute
 
 
   ## Tests
-  #### sdfbwaer55
+  #### Please test
 
 
   ## Questions
-  #### fbxdfxbdfb
+  #### Email address here
 
 
   ## Media
-  #### ![Doobies](./images/MIT.png)
+  #### ![./images/sample.jpg](./images/sample.jpg)
   
