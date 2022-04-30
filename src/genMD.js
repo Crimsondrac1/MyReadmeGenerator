@@ -1,4 +1,4 @@
-// create the about section
+
 const getUser = (pUser) => {
   if (!pUser) {
     return "";
@@ -73,18 +73,18 @@ const getQues = (pQues) => {
 
 const getMediaName = (pMediaName) => {
   if (!pMediaName) {
-    return "N/A";
+    return "No media available";
   }
 
-  return `${pMediaName}`;
+  return `![${pMediaName}]`;
 };
 
 const getMedia = (pMedia) => {
   if (!pMedia) {
-    return "N/A";
+    return "";
   }
 
-  return `${pMedia}`;
+  return `(${pMedia})`;
 };
 
 module.exports = (templateData) => {
@@ -102,17 +102,7 @@ module.exports = (templateData) => {
     medianame,
     media,
   } = templateData;
-  console.log(license);
-  // function getBadge(data) {
-  // const licenseType = license;
-  // let licenseString = " "
-  // const getLicBadge = (licBadge) => {
-  //   if (!licBadge) {
-  //     return "N/A";
-  //   }
-  
-  //   return `${licBadge}`;
-  // };
+
   if (license === "Apache 2.0") {
     licenseString = `[![License: Apache 2.0](https://crimsondrac1.github.io/Portfolio/assets/images/apache.jpg)](https://www.apache.org/licenses/LICENSE-2.0)`;
   }
@@ -172,6 +162,6 @@ module.exports = (templateData) => {
 
 
   ## Media
-  #### ![${getMediaName(medianame)}](${getMedia(media)})
+  #### ${getMediaName(medianame)}${getMedia(media)}
   `;
 };

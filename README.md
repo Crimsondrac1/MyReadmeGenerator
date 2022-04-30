@@ -1,13 +1,13 @@
 
-  # This Project 
+  # My Readme Generator 
 
-  ### A project by: Doug 
+  ### A project by: Doug Erickson 
 
-  Short Description 
+  A node application that generates a mark down enabled readme.md file for projects based on user responses 
 
   Licensed with:
 
-  [![License: Mozilla](https://crimsondrac1.github.io/Portfolio/assets/images/mozilla.jpg)](https://www.mozilla.org/en-US/MPL/)
+  [![License: GNU-GPL](https://crimsondrac1.github.io/Portfolio/assets/images/gnu-gpl.png)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
   ---
   ## Table of Contents
@@ -20,30 +20,30 @@
   ### [Screenshots/Media](#media)
   ---
   ## Installation
-  #### Please install
+  #### Requires NodeJS and the Inquirer package to run.
 
 
   ## Usage
-  #### Please Use
+  #### N/A
 
 
   ## License
-  #### This project is using the Mozilla license.
-  [![License: Mozilla](https://crimsondrac1.github.io/Portfolio/assets/images/mozilla.jpg)](https://www.mozilla.org/en-US/MPL/)
+  #### This project is using the GNU-GPL license.
+  [![License: GNU-GPL](https://crimsondrac1.github.io/Portfolio/assets/images/gnu-gpl.png)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
 
   ## Contributions
-  #### Please contribute
+  #### No guidelines at this time.
 
 
   ## Tests
-  #### Please test
+  #### No testing required
 
 
   ## Questions
-  #### Email address here
+  #### noemail@noemail.com
 
 
   ## Media
-  #### ![./images/sample.jpg](./images/sample.jpg)
+  #### ![Sample screenshot of a generated readme file](screenshot01.jpg)
   
