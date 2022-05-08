@@ -2,7 +2,7 @@ const fs = require('fs');
 
 const writeFile = fileContent => {
     return new Promise((resolve, reject) => {
-      fs.writeFile('./dist/readme.md', fileContent, err => {
+      fs.writeFile('./output/readme.md', fileContent, err => {
         // if there's an error, reject the Promise and send the error to the Promise's `.catch()` method
         if (err) {
           reject(err);
@@ -13,7 +13,7 @@ const writeFile = fileContent => {
         // if everything went well, resolve the Promise and send the successful data to the `.then()` method
         resolve({
           ok: true,
-          message: 'The readme file has been created in the ./dist folder!'
+          message: 'The readme file has been created in the ./output folder.'
         });
       });
     });
